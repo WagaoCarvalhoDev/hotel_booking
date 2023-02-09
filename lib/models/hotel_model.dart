@@ -29,13 +29,13 @@ class HotelModel {
   });
 
   static List<HotelModel> sampleHotels = [
-    HotelModel(
+    const HotelModel(
         id: '1',
-        title: 'Anna Hotel',
+        title: 'Anna Hotel Anna Hotel Anna Hotel Anna Hotel',
         location: 'Cutitiba, Paraná',
         address: 'Rua John Doe 69',
         description: 'We are only a 10-minute to Castle',
-        thumbnailPath: 'assets/images/thumbnail.jpg',
+        thumbnailPath: 'assets/images/thumbnail_01.jpg',
         imagePaths: [
           'assets/images/gallery_01.jpg',
           'assets/images/gallery_02.jpg',
@@ -44,6 +44,86 @@ class HotelModel {
         price: 123,
         coordinate: LatLng(-7.848484151212, 110.19151447777),
         ratingScore: 0.25,
-        totalReview: 45)
+        totalReview: 45),
+    const HotelModel(
+        id: '2',
+        title: 'John Hotel',
+        location: 'Belo Horizonte, Minas Gerais',
+        address: 'Rua alphavaca 336',
+        description: 'You are only a 10-minute to Castle',
+        thumbnailPath: 'assets/images/thumbnail_02.jpg',
+        imagePaths: [
+          'assets/images/gallery_01.jpg',
+          'assets/images/gallery_02.jpg',
+          'assets/images/gallery_03.jpg',
+        ],
+        price: 235,
+        coordinate: LatLng(-9.848484151212, 20.19151447777),
+        ratingScore: 1.25,
+        totalReview: 158),
+    const HotelModel(
+        id: '1',
+        title: 'Anna Hotel',
+        location: 'Cutitiba, Paraná',
+        address: 'Rua John Doe 69',
+        description: 'We are only a 10-minute to Castle',
+        thumbnailPath: 'assets/images/thumbnail_01.jpg',
+        imagePaths: [
+          'assets/images/gallery_01.jpg',
+          'assets/images/gallery_02.jpg',
+          'assets/images/gallery_03.jpg',
+        ],
+        price: 123,
+        coordinate: LatLng(-7.848484151212, 110.19151447777),
+        ratingScore: 3,
+        totalReview: 45),
+    const HotelModel(
+        id: '2',
+        title: 'John Hotel',
+        location: 'Belo Horizonte, Minas Gerais',
+        address: 'Rua alphavaca 336',
+        description: 'You are only a 10-minute to Castle',
+        thumbnailPath: 'assets/images/thumbnail_01.jpg',
+        imagePaths: [
+          'assets/images/gallery_01.jpg',
+          'assets/images/gallery_02.jpg',
+          'assets/images/gallery_03.jpg',
+        ],
+        price: 235,
+        coordinate: LatLng(-9.848484151212, 20.19151447777),
+        ratingScore: 1.25,
+        totalReview: 158),
+    const HotelModel(
+        id: '1',
+        title: 'Anna Hotel',
+        location: 'Cutitiba, Paraná',
+        address: 'Rua John Doe 69',
+        description: 'We are only a 10-minute to Castle',
+        thumbnailPath: 'assets/images/thumbnail_01.jpg',
+        imagePaths: [
+          'assets/images/gallery_01.jpg',
+          'assets/images/gallery_02.jpg',
+          'assets/images/gallery_03.jpg',
+        ],
+        price: 123,
+        coordinate: LatLng(-7.848484151212, 110.19151447777),
+        ratingScore: 0.25,
+        totalReview: 45),
+    const HotelModel(
+        id: '2',
+        title: 'John Hotel',
+        location: 'Belo Horizonte, Minas Gerais',
+        address: 'Rua alphavaca 336',
+        description: 'You are only a 10-minute to Castle',
+        thumbnailPath: 'assets/images/thumbnail_01.jpg',
+        imagePaths: [
+          'assets/images/gallery_01.jpg',
+          'assets/images/gallery_02.jpg',
+          'assets/images/gallery_03.jpg',
+        ],
+        price: 235,
+        coordinate: LatLng(-9.848484151212, 20.19151447777),
+        ratingScore: 1.25,
+        totalReview: 158),
   ];
 }
