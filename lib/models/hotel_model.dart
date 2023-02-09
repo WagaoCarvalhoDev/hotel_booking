@@ -1,3 +1,5 @@
+import 'package:google_maps_flutter/google_maps_flutter.dart';
+
 class HotelModel {
   final String id;
   final String title;
@@ -10,7 +12,7 @@ class HotelModel {
   final double ratingScore;
   final double price;
 
-  final double coordinate;
+  final LatLng coordinate;
 
   const HotelModel({
     required this.id,
@@ -27,7 +29,7 @@ class HotelModel {
   });
 
   static List<HotelModel> sampleHotels = [
-    const HotelModel(
+    HotelModel(
         id: '1',
         title: 'Anna Hotel',
         location: 'Cutitiba, Paraná',
@@ -40,7 +42,7 @@ class HotelModel {
           'assets/images/gallery_03.jpg',
         ],
         price: 123,
-        coordinate: 110.19151447777,
+        coordinate: LatLng(-7.848484151212, 110.19151447777),
         ratingScore: 0.25,
         totalReview: 45)
   ];
