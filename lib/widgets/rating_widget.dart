@@ -30,10 +30,10 @@ class RatingWidget extends StatelessWidget {
                   width: 2,
                 )),
           ),
-        SizedBox(height: 9),
+        const SizedBox(height: 10),
         Text(
           ' $ratingScore',
-          style: TextStyle(fontSize: 8, fontWeight: FontWeight.bold),
+          style: const TextStyle(fontSize: 8, fontWeight: FontWeight.bold),
         ),
       ],
     );
