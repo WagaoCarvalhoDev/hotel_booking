@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:hooks_riverpod/hooks_riverpod.dart';
+import 'package:hotel_booking/providers/all_hotels_provider.dart';
 import 'package:intl/intl.dart';
 
 import '../widgets/button_widget.dart';
@@ -32,6 +34,8 @@ class HomeScreen extends StatelessWidget {
                   child: Column(children: const [
                     _HeaderSection(),
                     _SearchCardWidget(),
+                    SizedBox(height: 20),
+                    _NearBYHotels(),
                   ]),
                 ),
               ],
@@ -39,6 +43,33 @@ class HomeScreen extends StatelessWidget {
           ],
         ),
       ),
+    );
+  }
+}
+
+class _NearBYHotels extends ConsumerWidget {
+  const _NearBYHotels({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final hotels = ref.watch(allHotelsProvider);
+
+    return Column(
+      children: [
+        hotels.when(
+          data: (hotels) {
+            return ListView.builder(
+              shrinkWrap: true,
+              itemCount: hotels.length,
+              itemBuilder: (context, index) {
+                return Text(hotels[index].title);
+              },
+            );
+          },
+          error: (error, stackTrace) => Text('Error $stackTrace'),
+          loading: () => const Center(child: CircularProgressIndicator()),
+        )
+      ],
     );
   }
 }

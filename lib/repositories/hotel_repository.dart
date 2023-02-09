@@ -1,10 +1,10 @@
-import 'package:hotel_booking/hotel_model.dart';
+import 'package:hotel_booking/models/hotel_model.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 
-//part 'hotel_repository.g.dart';
+part 'hotel_repository.g.dart';
 
 @riverpod
-HotelRepository hotelRepository(HotelRepository ref) => HotelRepository();
+HotelRepository hotelRepository(HotelRepositoryRef ref) => HotelRepository();
 
 class HotelRepository {
   Future<List<HotelModel>> getHotels() async {
