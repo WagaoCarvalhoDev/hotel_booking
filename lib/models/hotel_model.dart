@@ -51,7 +51,7 @@ class HotelModel {
         location: 'Belo Horizonte, Minas Gerais',
         address: 'Rua alphavaca 336',
         description: 'You are only a 10-minute to Castle',
-        thumbnailPath: 'assets/images/thumbnail_02.jpg',
+        thumbnailPath: 'assets/images/thumbnail_01.jpg',
         imagePaths: [
           'assets/images/gallery_01.jpg',
           'assets/images/gallery_02.jpg',

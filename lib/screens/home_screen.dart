@@ -6,6 +6,7 @@ import 'package:intl/intl.dart';
 import '../widgets/button_widget.dart';
 import '../widgets/hotel_card_widget.dart';
 import '../widgets/icon_button_widget.dart';
+import '../widgets/nav_bar_widget.dart';
 import '../widgets/text_field_widget.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -19,6 +20,9 @@ class HomeScreen extends StatelessWidget {
 
     return Scaffold(
       backgroundColor: Colors.blue,
+      bottomNavigationBar: const NavBarWidget(
+        index: 0,
+      ),
       body: SafeArea(
         bottom: false,
         child: Stack(
